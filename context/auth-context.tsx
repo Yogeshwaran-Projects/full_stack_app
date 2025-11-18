@@ -63,9 +63,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     // 4. Redirect based on role
-    if (decoded.role === "admin") router.push("/admin/dashboard");
-    else if (decoded.role === "worker") router.push("/worker/dashboard");
-    else router.push("/");
+    if (decoded.role === "admin") router.push("/profile");
+    else if (decoded.role === "worker") router.push("/profile");
+    else router.push("/profile");
   };
 
   const logout = () => {

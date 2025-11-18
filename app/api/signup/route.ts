@@ -1,6 +1,6 @@
 import { prisma } from '@/lib/prisma';
 import { NextResponse } from 'next/server';
-import { user_role } from '@/lib/generated/prisma/enums';
+import { user_role } from '@/lib/prisma';
 import * as bcrypt from 'bcryptjs';
 
 export async function POST(request: Request) {
